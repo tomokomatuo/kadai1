@@ -1,0 +1,86 @@
+.header li{
+  color: white;
+}
+.main .company {
+}
+
+/* formのフォントサイズを設定します */
+.main .form .contact {
+}
+
+/* テーブルの高さを設定します */
+.main .form .contact tr {
+}
+
+/* テーブルの幅を設定します */
+.main .form .contact tr th {
+  width: 480px;
+}
+
+/* 入力フォームの幅を設定します */
+.main .form .contact tr td input[type="text"], .main .form .contact tr td textarea {
+   /* height: 7rem; */
+   width: 480px;
+}
+
+/* ラジオボタンと「男」の幅を設定します */
+.main .form .contact tr td .label {
+  margin-left: 2px;
+}
+
+/* ラジオボタンと「女」の幅を設定します */
+.main .form .contact tr td .label:first-of-type {
+  margin-left: 2px;
+}
+
+/* 送信ボタンを中央寄せに設定します */
+.main .form p {
+  /* margin* 0 auto; */
+  text-align: center;
+}
+
+/* 送信ボタンのカラーと「カーソルを合わせると透明になる」を設定します */
+.main .form p input[type="submit"] {
+  background-color: yellow;
+  font-size: 11px;
+  border-radius: 5px;
+
+}
+.main .form p input[type="submit"]:hover {
+  background-color: #fff;
+  font-size: 11px;
+  border-radius: 5px;
+}
+
+/* .footer{
+
+  background-color: #4D4D4D;
+  height: 100px;
+  width: 100%;
+}
+.footer p {
+  font-size: 1rem;
+  color: #fff;
+} */
+
+
+.container{
+  width: 980px;
+  margin: 0 auto;
+  position: relative;
+  min-height: 100%;
+  /* heightとmin-heightで挙動の違いを確認してみましょう。 */
+  /* height: 100%; */
+}
+.footer{
+  width: 68%;
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  background-color: #4D4D4D;
+}
+.footer p {
+  color: white;
+  text-align: center;
+  line-height: 65px 65px;
+}

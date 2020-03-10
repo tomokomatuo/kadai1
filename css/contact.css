@@ -19,7 +19,7 @@
 
 /* 入力フォームの幅を設定します */
 .main .form .contact tr td input[type="text"], .main .form .contact tr td textarea {
-   /* height: 7rem; */
+   height: 7rem;
    width: 480px;
 }
 

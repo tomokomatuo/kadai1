@@ -1,86 +1,149 @@
-.header li{
-  color: white;
-}
-.main .company {
-}
-
-/* formのフォントサイズを設定します */
-.main .form .contact {
+html {
+  font-size: 62.5%;
+  height: 100%;
 }
 
-/* テーブルの高さを設定します */
-.main .form .contact tr {
+body {
+ height: 100%;
 }
 
-/* テーブルの幅を設定します */
-.main .form .contact tr th {
-  width: 480px;
+#container{
+  position: relative;
+  width: 980px;
+  margin: 0 auto;
+  min-height: 100%;
 }
 
-/* 入力フォームの幅を設定します */
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.header {
+  background-color: #F5B4B3;
+  height: 50px;
+  font-size: 1.5rem;
+}
+
+ul.top_menu {
+  float: right;
+}
+
+.top_menu li {
+  float: left;
+  width: auto;
+}
+
+.top_menu li a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 15px;
+}
+
+.top_menu li a:hover {
+  text-decoration: underline;
+}
+
+.logo_image {
+  width: 110px;
+  float: left;
+  margin: 0;
+}
+
+.image_area{
+  width: 100%;
+}
+
+.wrapper{
+  margin-top: 10px;
+  padding-bottom: 100px;
+}
+
+.side_menu{
+  width: 300px;
+  float: left;
+}
+
+.side_menu li{
+  background-color: #F5B4B3;
+  height: 6rem;
+  margin-bottom: 10px;
+}
+
+.side_menu li:hover{
+  opacity: 0.6;
+}
+
+
+.side_menu li a{
+  font-size:2rem;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 2rem;
+}
+
+.form {
+  width: 660px;
+  margin-left:20px;
+  float: left;
+  font-size: 1.5rem;
+}
+
+.form p {
+  text-align: center;
+}
+
+.side_menu .point{
+  background-color: #fdeff2;
+}
+
+.side_menu .point a{
+  color: black;
+}
+
+/* .side_menu .point a{
+  color: #4D4D4D;
+} */
+
 .main .form .contact tr td input[type="text"], .main .form .contact tr td textarea {
+   /* height: 7rem; */
    height: 7rem;
    width: 480px;
 }
 
-/* ラジオボタンと「男」の幅を設定します */
-.main .form .contact tr td .label {
-  margin-left: 2px;
+.main .form .contact th {
+  width: 150px;
 }
 
-/* ラジオボタンと「女」の幅を設定します */
-.main .form .contact tr td .label:first-of-type {
-  margin-left: 2px;
+.btn:hover {
+  background-color: green;
 }
 
-/* 送信ボタンを中央寄せに設定します */
-.main .form p {
-  /* margin* 0 auto; */
-  text-align: center;
-}
-
-/* 送信ボタンのカラーと「カーソルを合わせると透明になる」を設定します */
-.main .form p input[type="submit"] {
-  background-color: yellow;
-  font-size: 11px;
-  border-radius: 5px;
-
-}
-.main .form p input[type="submit"]:hover {
-  background-color: #fff;
-  font-size: 11px;
-  border-radius: 5px;
-}
-
-/* .footer{
-
-  background-color: #4D4D4D;
-  height: 100px;
-  width: 100%;
-}
-.footer p {
-  font-size: 1rem;
-  color: #fff;
-} */
-
-
-.container{
-  width: 980px;
-  margin: 0 auto;
-  position: relative;
-  min-height: 100%;
-  /* heightとmin-heightで挙動の違いを確認してみましょう。 */
-  /* height: 100%; */
-}
 .footer{
-  width: 68%;
+  width: 100%;
   height: 100px;
   position: absolute;
   bottom: 0;
   background-color: #4D4D4D;
+  display: table;
 }
+
 .footer p {
-  color: white;
+  font-size: 1rem;
+  color: #fff;
   text-align: center;
-  line-height: 65px 65px;
+  vertical-align: middle;
+  display: table-cell;
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
 }
